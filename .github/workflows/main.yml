@@ -1,0 +1,29 @@
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+    - main
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Checkout
+       uses: actions/checkout@v3.5.2
+     - name: Setup Node environemnt 
+       uses: actions/setup-node@v2.5.2
+       with:
+         node-version: '10.x'
+     - name: Install dependencies
+       run: npm i
+     - name: Build storybook
+       run: npm run build-storybook
+     - name: Upload GitHub Pages artifact
+       uses: actions/upload-pages-artifact@v1.0.8
+       with:
+         path: storybook-static
+       
+    
