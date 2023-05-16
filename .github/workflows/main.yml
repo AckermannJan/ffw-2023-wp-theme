@@ -27,7 +27,11 @@ jobs:
          path: storybook-static
          
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v2.0.1
