@@ -14,7 +14,7 @@ withDefaults(
 
 <template>
   <div :class="['title-header', `title-header--${textAlign}`]">
-      <slot />
+    <slot />
   </div>
 </template>
 

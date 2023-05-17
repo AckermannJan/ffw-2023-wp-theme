@@ -9,7 +9,7 @@ const meta = {
     setup() {
       return { args }
     },
-    template: '<title-header :text-align="args.textAlign">Hello World</title-header>'
+    template: '<title-header :text-align="args.textAlign"> {{ args.text }} </title-header>'
   }),
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs']
@@ -18,16 +18,22 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {
+    text: 'Hello world'
+  }
+}
 
 export const CenterText: Story = {
   args: {
-    textAlign: 'center'
+    textAlign: 'center',
+    text: 'Hello world'
   }
 }
 
 export const RightText: Story = {
   args: {
-    textAlign: 'right'
+    textAlign: 'right',
+    text: 'Hello world'
   }
 }
