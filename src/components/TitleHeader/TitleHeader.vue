@@ -13,7 +13,9 @@ withDefaults(
 </script>
 
 <template>
-  <div :class="['title-header', `title-header--${textAlign}`]">Letzter Einsatz</div>
+  <div :class="['title-header', `title-header--${textAlign}`]">
+      <slot />
+  </div>
 </template>
 
 <style lang="scss">

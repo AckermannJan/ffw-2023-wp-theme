@@ -9,7 +9,7 @@ const meta = {
     setup() {
       return { args }
     },
-    template: '<title-header :text-align="args.textAlign" />'
+    template: '<title-header :text-align="args.textAlign">Hello World</title-header>'
   }),
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs']
