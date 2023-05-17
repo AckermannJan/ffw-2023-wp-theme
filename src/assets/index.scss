@@ -1,0 +1,11 @@
+@import 'ress';
+@import '_base.scss';
+@import '_colors.scss';
+@import '_spacings.scss';
+@import '_typography.scss';
+@import '_z-index';
+
+html {
+  font-size: $base__font-size;
+  font-family: $font-family;
+}

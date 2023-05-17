@@ -1,0 +1,13 @@
+/**********************************/
+/**    Z-INDEX stacking order    **/
+/**********************************/
+
+$z-index__tooltip: 9000 !default;
+$z-index__notification: 8500 !default;
+$z-index__modal: 8000 !default;
+$z-index__overlay: 7000 !default;
+$z-index__dropdown: 6000 !default;
+$z-index__sidebar: 5000 !default;
+$z-index__header: 4000 !default;
+$z-index__default: 1 !default;
+$z-index__belo: -1 !default;

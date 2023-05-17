@@ -8,12 +8,13 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
-    "lint": "eslint ffw-2023 --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint ./src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "ress": "^5.0.2",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
@@ -24,6 +25,7 @@
     "@storybook/addon-links": "^7.0.12",
     "@storybook/blocks": "^7.0.12",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/types": "^7.0.12",
     "@storybook/vue3": "^7.0.12",
     "@storybook/vue3-vite": "^7.0.12",
     "@tsconfig/node18": "^2.0.1",
@@ -39,6 +41,7 @@
     "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.62.1",
     "storybook": "^7.0.12",
     "typescript": "~5.0.4",
     "vite": "^4.3.5",
