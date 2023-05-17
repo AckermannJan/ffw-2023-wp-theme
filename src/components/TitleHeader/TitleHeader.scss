@@ -1,0 +1,20 @@
+.title-header {
+  padding: $spacing--5 $spacing--11;
+  width: 100%;
+  background: $color__grey--light;
+  border-bottom: solid 2px $color__red;
+  font-size: $font-size--21;
+  font-weight: $font-weight-300;
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
