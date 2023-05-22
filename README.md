@@ -1,3 +1,6 @@
+[![.github/workflows/main.yml](https://github.com/AckermannJan/ffw-2023-wp-theme/actions/workflows/main.yml/badge.svg)](https://github.com/AckermannJan/ffw-2023-wp-theme/actions/workflows/main.yml)
+[![https://img.shields.io/badge/Preview-Go%20to%20preview-green](https://img.shields.io/badge/Preview-Go%20to%20preview-green)](https://ackermannjan.github.io/ffw-2023-wp-theme/?path=/docs/components-titleheader--docs)
+
 # ffw-2023
 
 This template should help get you started developing with Vue 3 in Vite.
