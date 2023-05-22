@@ -6,10 +6,10 @@ withDefaults(
     /**
      * Used to align the text
      */
-    textAlign?: typeTextAlign
+    textAlign: typeTextAlign
   }>(),
-  { textAlign: 'left' }
-)
+  { textAlign: 'left' },
+);
 </script>
 
 <template>
