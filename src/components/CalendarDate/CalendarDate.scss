@@ -1,0 +1,23 @@
+.calendar-date {
+  border: solid 5px $color__red;
+  display: inline-block;
+  text-align: center;
+
+  %basic-shape {
+    font-size: $font-size--24;
+    font-weight: $font-weight-700;
+    line-height: $line-height--28;
+    padding: $spacing--5 $spacing--11;
+  }
+
+  &__week-day {
+    @extend %basic-shape;
+    color: $color__red;
+  }
+
+  &__day {
+    @extend %basic-shape;
+    color: $color__white;
+    background: $color__red;
+  }
+}

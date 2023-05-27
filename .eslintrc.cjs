@@ -21,4 +21,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest'
   },
+  rules: {
+    "vue/require-default-prop": 0
+  }
 };
