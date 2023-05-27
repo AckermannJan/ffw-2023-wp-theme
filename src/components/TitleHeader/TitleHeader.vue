@@ -1,12 +1,12 @@
 <script setup lang="ts">
-type typeTextAlign = 'left' | 'center' | 'right'
+type typeTextAlign = 'left' | 'center' | 'right';
 
 withDefaults(
   defineProps<{
     /**
      * Used to align the text
      */
-    textAlign: typeTextAlign
+    textAlign: typeTextAlign;
   }>(),
   { textAlign: 'left' },
 );
