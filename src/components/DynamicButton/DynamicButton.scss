@@ -1,0 +1,14 @@
+.dynamic-button {
+  background: $color__red;
+  padding: $spacing--5 $spacing--11;
+  display: inline-block;
+  font-weight: $font-weight-300;
+  color: $color__white;
+  border-radius: $spacing--5;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: $color__red-light;
+  }
+}
