@@ -32,12 +32,25 @@
   }
 
   &__body-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: $spacing--22;
     height: 100%;
     z-index: 1;
     background: $color__grey--light;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: calc($spacing--22 + $spacing--5);
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 14px;
+      border-color: transparent transparent transparent $color__red;
+    }
   }
 
   &__text {
