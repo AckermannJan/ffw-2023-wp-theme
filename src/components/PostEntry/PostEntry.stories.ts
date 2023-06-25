@@ -11,7 +11,12 @@ const meta = {
       return { args };
     },
     template: `
-        <post-entry img-src="http://wordpress.feuerwehr-traisa.de/wp-content/uploads/2023/05/IMG_5254.jpeg" :variant="args.variant">
+      <div style="width: 714px;">
+        <post-entry 
+          :img-src="args.imgSrc" 
+          :img-alt="args.imgAlt" 
+          :variant="args.variant"
+        >
           <template #title>
             Maiwanderung
           </template>
@@ -26,6 +31,7 @@ const meta = {
             </DynamicButton>
           </template>
         </post-entry>
+      </div>
     `,
   }),
   tags: ['autodocs'],
@@ -36,12 +42,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    date: 1685836800,
+    imgSrc: 'http://wordpress.feuerwehr-traisa.de/wp-content/uploads/2023/05/IMG_5254.jpeg',
+    imgAlt: 'Alt text',
   },
 };
 
 export const Small: Story = {
   args: {
+    imgSrc: 'http://wordpress.feuerwehr-traisa.de/wp-content/uploads/2023/05/IMG_5254.jpeg',
+    imgAlt: 'Alt text',
     variant: 'small',
   },
 };

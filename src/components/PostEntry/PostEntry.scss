@@ -63,6 +63,7 @@
 
     &--small {
       flex-direction: row;
+      gap: $spacing--22;
 
       &::after {
         display: none;
