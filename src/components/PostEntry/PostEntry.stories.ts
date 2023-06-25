@@ -11,8 +11,7 @@ const meta = {
       return { args };
     },
     template: `
-      <div style="width: 714px;">
-        <post-entry img-src="http://wordpress.feuerwehr-traisa.de/wp-content/uploads/2023/05/IMG_5254.jpeg">
+        <post-entry img-src="http://wordpress.feuerwehr-traisa.de/wp-content/uploads/2023/05/IMG_5254.jpeg" :variant="args.variant">
           <template #title>
             Maiwanderung
           </template>
@@ -27,7 +26,6 @@ const meta = {
             </DynamicButton>
           </template>
         </post-entry>
-      </div>
     `,
   }),
   tags: ['autodocs'],
@@ -39,5 +37,11 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     date: 1685836800,
+  },
+};
+
+export const Small: Story = {
+  args: {
+    variant: 'small',
   },
 };

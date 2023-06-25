@@ -6,6 +6,10 @@
   border-bottom-left-radius: $spacing--11;
   border-top-left-radius: $spacing--11;
 
+  &--small {
+    height: 110px;
+  }
+
   &__img {
     border-right: solid 5px $color__red;
     display: inline-flex;
@@ -29,6 +33,11 @@
       z-index: -1;
       filter: blur(20px);
     }
+
+    &--small {
+      flex-basis: 15%;
+      min-width: 15%;
+    }
   }
 
   &__body-wrapper {
@@ -51,6 +60,14 @@
       border-width: 10px 0 10px 14px;
       border-color: transparent transparent transparent $color__red;
     }
+
+    &--small {
+      flex-direction: row;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
   &__text {
@@ -60,12 +77,21 @@
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    &--small {
+      -webkit-line-clamp: 2;
+    }
   }
 
   &__title {
     font-size: $font-size--24;
     font-weight: $font-weight-300;
     margin-bottom: $spacing--22;
+
+    &--small {
+      font-size: $font-size--16;
+      margin-bottom: $spacing--11;
+    }
   }
 
   &__actions {
