@@ -5,6 +5,7 @@
     "types/vue-shim.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
+    "src/**/*.stories.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
   ],

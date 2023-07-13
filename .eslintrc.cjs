@@ -22,6 +22,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    "vue/require-default-prop": 0
+    "vue/require-default-prop": 0,
+    "no-use-before-define": 0
   }
 };
