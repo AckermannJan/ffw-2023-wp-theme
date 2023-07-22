@@ -11,7 +11,7 @@ const meta = {
       return { args };
     },
     template: `
-      <div style="width: 714px;">
+      <div style="width: 50%;">
         <post-entry 
           :img-src="args.imgSrc" 
           :img-alt="args.imgAlt" 
