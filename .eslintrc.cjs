@@ -23,6 +23,7 @@ module.exports = {
   },
   rules: {
     "vue/require-default-prop": 0,
-    "no-use-before-define": 0
+    "no-use-before-define": 0,
+    "import/no-extraneous-dependencies": 0
   }
 };

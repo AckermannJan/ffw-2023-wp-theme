@@ -26,7 +26,6 @@ import { createPopper } from '@popperjs/core';
 import type { Instance as PopperInstance, Placement } from '@popperjs/core';
 
 interface Props {
-  // Test
   childHasFocus?: boolean;
   baseDesign?: boolean;
   placement?: Placement;
