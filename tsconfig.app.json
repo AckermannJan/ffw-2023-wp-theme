@@ -3,6 +3,8 @@
   "include": [
     "env.d.ts",
     "types/vue-shim.d.ts",
+    "types/**/*.ts",
+    "types/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.stories.ts",
@@ -17,7 +19,7 @@
     "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./src/*"]
+      "~/*": ["./*"]
     }
   }
 }
