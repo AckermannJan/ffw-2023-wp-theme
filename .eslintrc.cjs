@@ -6,7 +6,8 @@ module.exports = {
     node: true
   },
   plugins: [
-      'vue'
+      'vue',
+      'import'
   ],
   extends: [
     "plugin:vue/vue3-essential",
@@ -16,6 +17,14 @@ module.exports = {
     "plugin:storybook/recommended",
     '@vue/eslint-config-airbnb'
   ],
+  settings: {
+    "import/resolver": {
+      "typescript": {
+        paths: "./tsconfig.json",
+        alwaysTryTypes: true
+      }
+    },
+  },
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
